@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+
+button {
+  padding: 8px 15px;
+}
