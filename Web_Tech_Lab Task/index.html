@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> City Gym Membership</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>City Gym Membership</h1>
+<div>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Fee (Taka)</th>
+  </tr>
+  <tr>
+    <td>Monthly Plan</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Quarterly Plan</td>
+    <td>4000</td>
+  </tr>
+  <tr>
+    <td>Yearly Plan</td>
+    <td>14000</td>
+  </tr>
+  <tr>
+    <td>Family Add-on (each)</td>
+    <td>500</td>
+  </tr>
+</table>
+
+<form id="gymForm" onsubmit="return validateForm()" novalidate>
+
+<fieldset>
+<legend> Personal Details</legend>
+<div class="field">
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName">
+<div class="error" id="nameError"></div>
+</div>
+<div class="field">
+<label for="age">Age</label>
+<input type="number" id="age">
+<div class="error" id="ageError"></div>
+</div>
+<div class="field">
+<label for="mobile">Mobile Number</label>
+<input type="text" id="mobile">
+<div class="error" id="mobileError"></div>
+</div>
+<div class="field">
+<label for="emailName">Email</label>
+<input type="text" id="email">
+<div class="error" id="emailError"></div>
+</div>
+<div class="field">
+<label for="password">Password</label>
+<input type="password" id="password">
+<div class="error" id="passError"></div>
+</div>
+<div class="field">
+<label for="confirmPassword">Confirm Password</label>
+<input type="password" id="confirmPassword">
+<div class="error" id="confirmError"></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Member Plan</legend>
+
+<div class="field">
+<label for="plan">Plan</label>
+<select id="plan">
+<option value=""> Select Plan</option>
+<option value="Monthly"> Monthly</option>
+<option value="Quaterly">Quaterly</option>
+<option value="Yearly">Yearly</option>
+</select>
+<div class="error" id="planError"></div>
+</div>
+
+<div class="field">
+<label for="startDate">Start Date</label>
+<input type="date" id="startdate">
+<div class="error" id="dataError"></div>
+</div>
+
+<div class="field">
+<span class="groupTitle">Workout Time</span><br>
+<label for="morning" class="radioLabel"><input type="radio" id="morning" name="workout" value="Morning"> Morning</label>
+<label for="afternoon" class="radioLabel"><input type="radio" id="afternoon" name="workout" value="Afternoon"> Afternoon</label>
+<label for="evening" class="radioLabel"><input type="radio" id="evening" name="workout" value="Evening"> Evening</label>
+<div class="error" id="workoutError"></div>
+</div>
+
+ <div class="trainerRow">
+
+<div class="half">
+<label for="mainTrainer">Main Trainer</label>
+<select id="mainTrainer">
+<option value="">Select Trainer</option>
+<option value="Rayhanul">Rayhanul</option>
+<option value="Mitu">Mitu</option>
+<option value="Sabbir">Sabbir</option>
+<option value="Joya">Joya</option>
+</select>
+<div class="error" id="mainError"></div>
+</div>
+
+<div class="half">
+<label for="backupTrainer">Backup Trainer</label>
+<select id="backupTrainer">
+<option value="">Select Trainer</option>
+<option value="Rayhanul">Rayhanul</option>
+<option value="Mitu">Mitu</option>
+<option value="Sabbir">Sabbir</option>
+<option value="Joya">Joya</option>
+</select>
+<div class="error" id="backupError"></div>
+</div>
+
+</div>
+<div class="field">
+<label for="addons">Family Add-ons</label>
+<input type="number" id="addons">
+<div class="error" id="addonError"></div>
+</div>
+</fieldset>
+
+<div class="field">
+<input type="checkbox" id="agree" onchange="toggleButton()">
+<label for="agree">I am medically fit to exercise and I accept the gym rules.</label>
+</div>
+
+<button type="submit" id="joinBtn" disabled>Join Now</button>
+<div class="final" id="finalMessage"></div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

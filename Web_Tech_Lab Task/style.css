@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding-bottom: 30px;}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;}
+
+table {
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 10px 25px;}
+
+th {
+    background-color: royalblue;
+    color: white;}
+
+form {
+    max-width: 560px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}
+
+fieldset {
+    border: 2px solid #2563eb;
+    margin-bottom: 20px;
+    padding: 10px 15px;}
+
+legend {
+    font-weight: bold;}
+
+.field {
+    margin-bottom: 12px;}
+
+label {
+    display: block;
+    margin-bottom: 4px;}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: none;}
+
+.groupTitle {
+    display: block;
+    margin-bottom: 4px;}
+
+.radioLabel {
+    display: inline-block;
+    margin-right: 15px;}
+
+.trainerRow {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;}
+
+.half {
+    flex: 1;}
+
+#agree {
+    display: inline-block;}
+
+.field label[for="agree"] {
+    display: inline;}
+
+button {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+
+button:hover {
+    background-color: #1e40af;}
+
+button:disabled {
+    background-color: #999;
+    opacity: 0.5;
+    cursor: not-allowed;}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;}
+
+.final {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid green;
+    background-color: #e8f8ec;
+    color: #146c2e;
+    border-radius: 6px;}
+
+.final:empty {
+    display: none;}
